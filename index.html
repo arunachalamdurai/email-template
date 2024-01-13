@@ -1,0 +1,475 @@
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Email Templete</title>
+
+    <!---------------- Style ---------------->
+
+    <style>
+        /**************** gentral *************/
+        body {
+            max-width: 640px;
+            min-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            color: #000000bd;
+            background-color: gray;
+            font-family: sans-serif;
+            
+        }
+
+        table {
+            border: none;
+            border-spacing: 0px;
+
+        }
+
+        td {
+            padding: 0px;
+        }
+        
+        .main {
+
+            width: 100%;
+            min-width: 320px;
+            margin: auto 0;
+            border: none;
+            background-color: white;
+        }
+
+        /**************** logo section *************/
+        .logo-section {
+            width: 100%;
+            min-width: 320px;
+        }
+        .logo-section img {
+            margin: 10px 0px 10px 30px;
+        }
+
+        /**************** Hero Banner *************/
+        .banner-row {
+            width: 100%;
+            min-width: 320px;
+          
+
+        }
+        .banner-row p{
+            background-image: url(./Asset-1/banner\ image-mob-1.png);
+            background-size: cover;
+            color: white;
+            font-size: x-large;
+            padding: 20px 0px;
+            margin: 0px;
+            padding: 20px;
+            
+        }
+       
+        /**************** top para *************/
+        .top-para {
+            width: 100%;
+            min-width: 320px;
+        }
+
+        .top-para .top-para td {
+            width: 100%;
+            min-width: 320px;
+            padding: 30px 30px;
+        }
+        .top-para .top-para td p{
+            min-width: 320px;
+        }
+
+        /**************** mobile image *************/
+        .mobile-img {
+            width: 100%;
+
+        }
+
+        /**************** content list *************/
+        .content-list {
+            width: 100%;
+
+        }
+
+        .content-list .content-list-pad {
+            padding: 15px 35px;
+        }
+
+        .con-list-head {
+            width: 100%;
+        }
+
+        .con-list-head h2 {
+            width: 100%;
+            color: #fb6404;
+        }
+
+        .list-container {
+            width: 100%;
+            margin: 20px;
+        }
+
+        .list-container p {
+            margin: 0px;
+        }
+
+        .list-container td {
+            padding: 5px;
+        }
+
+        .list-container .tick-symbol {
+            vertical-align: top;
+            width: 20px;
+
+        }
+
+        .list-container .tick-symbol p {
+            padding: 5px;
+            border-radius: 50%;
+            color: #60ad56;
+            background-color: #9bd1956b;
+        }
+
+        .list-container .list-tittle {
+            margin: 0px 0px 10px 0px;
+            font-weight: 700;
+        }
+
+        .list-btn td {
+            padding: 20px;
+        }
+
+        .list-btn button {
+            border-radius: 5px;
+            border: none;
+            background-color: #237bb8;
+            color: white;
+            padding: 10px 35px;
+        }
+
+        /**************** footer top *************/
+        .footer-top {
+            width: 100%;
+            background-color: #f7f7f7;
+            padding: 30px;
+        }
+
+        .footer-top table {
+            padding: 25px;
+        }
+
+        .footer-top td p {
+            padding: 0px 10px;
+            margin: 0px;
+        }
+
+        #foooter-tittle {
+            font-weight: 600;
+            font-size: large;
+            color: #237bb8;
+        }
+
+        .footer-top a {
+            color: #237bb8;
+            cursor: pointer;
+        }
+
+        .app-poster {
+            width: 100%;
+
+        }
+
+        /**************** app poster *************/
+        .app-poster table {
+            width: 100%;
+            margin: auto 0;
+            text-align: center;
+            background-color: #fc6401;
+            color: white;
+            font-size: x-large;
+            padding: 20px 0px 0px 0px;
+
+        }
+
+        .googleplay-card td {
+            width: 50%;
+        }
+
+        /**************** social meadi *************/
+        .social-meadia{
+            width: 100%;
+        }
+        .social-meadia td table{
+            width: 100%;
+            padding: 25px;
+            background-color: #f7f7f7c7;
+        }
+        .social-meadia td table td{
+            padding: 5px;
+        }
+
+        /**************** contact *************/
+        .contact{
+            background-color: #2d2d2d;
+            
+            
+        }
+        .contact td{
+            color: rgba(255, 255, 255, 0.747);
+            font-size: smaller;
+            font-weight: 100;
+            padding: 10px;
+        }
+
+        /**************** Media Quary *************/
+        @media screen and (max-width:360px){
+            #banner-desc{
+                display: none;
+            }
+            #top-para-id{
+
+            }
+            #mobile-img-id{
+                display: none;
+            }
+            #app-pos-mobi{
+                display: none;
+            }
+            .list-btn button{
+                width: 270px;
+            }
+            .app-poster table{
+                padding: 40px 0px;
+            }
+   
+        }
+        @media screen and (min-width:360px){
+            #banner-desc{
+                display: block;
+            }
+            #banner-mobi{
+                display: none;
+            }
+            #mobile-img-id-2{
+                display: none;
+            }
+            .banner-row p{
+                display: none;
+            }
+   
+        }
+    </style>
+
+</head>
+
+<body>
+    <table class="main">
+
+        <!------------------ logo section ------------------->
+        <tr class="logo-section">
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./Asset-1/logo.png" width="130px" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+        <!------------------ Banner area ------------------->
+        <tr class="banner-row">
+            <td class="BG-banner">
+                <table>
+                    <tr>
+                        <td>
+                            
+                            <p>Lorem ipsum
+                                dolor sit amet
+                                consectetur ®<sup>3</sup> 
+                                </p>
+                                <img id="banner-mobi" src="./Asset-1/banner image-mob.png"  alt="">
+                            <img id="banner-desc" src="./Asset-1/email template_page-0001 (1).jpg" width="640px" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!------------------ Top para ------------------->
+        <tr class="top-para">
+            <td>
+                <table>
+                    <tr class="top-para">
+                        <td>
+                            <p id="top-para-id"> <strong>[feugiat], Lorem ipsum dolor sit amet consectetur Scelerisque
+                                    <sup>3</sup>.</strong> enim
+                                suspendisse pretium enim eget feugiat diam egestas egestas euismod.
+                                Risus potenti imperdiet amet tortor. Platea eros tincidunt eget id massa
+                                accumsan. Tellus mauris congue varius commodo velit in. Lacus.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!------------------ Mobile image section ------------------->
+        <tr class="mobile-img">
+            <td>
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="text-align: center;">
+                            <img id="mobile-img-id-2" src="./Asset-1/Image-2.png" alt="">
+                            <img id="mobile-img-id" src="./Asset-1/Image-1.png" style="margin: 20px 0px;" align="center" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!------------------ content list ------------------->
+        <tr class="content-list">
+            <td class="content-list-pad">
+                <table>
+                    <tr class="con-list-head">
+                        <td colspan="2">
+                            <h2>Lorem ipsum dolor sit</h2>
+                        </td>
+                    </tr>
+
+                    <tr class="list-container">
+                        <td class="tick-symbol">
+                            <p>&#10003;</p>
+                        </td>
+                        <td>
+                            <p class="list-tittle">Lorem ipsum dolor sit amet consectetur. Suspendisse.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Faucibus commodo
+                                tortor
+                                turpis posuere at quisque aliquam amet. Lacinia sit
+                                auctor elit in elit.</p>
+                        </td>
+                    </tr>
+
+                    <tr class="list-container">
+                        <td class="tick-symbol">
+                            <p>&#10003;</p>
+                        </td>
+                        <td>
+                            <p class="list-tittle">Lorem ipsum dolor sit amet consectetur. Suspendisse.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Faucibus commodo
+                                tortor
+                                turpis posuere at quisque aliquam amet. Lacinia sit
+                                auctor elit in elit.</p>
+                        </td>
+                    </tr>
+
+                    <tr class="list-container">
+                        <td class="tick-symbol">
+                            <p>&#10003;</p>
+                        </td>
+                        <td>
+                            <p class="list-tittle">Lorem ipsum dolor sit amet consectetur. Suspendisse.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Faucibus commodo
+                                tortor
+                                turpis posuere at quisque aliquam amet. Lacinia sit
+                                auctor elit in elit.</p>
+                        </td>
+                    </tr>
+                    <tr class="list-btn">
+                        <td colspan="2">
+                            <button>Lorem ipsum</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+        <!------------------ Footer Top ------------------->
+        <tr class="Footer-top">
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./Asset-1/Icons.png" width="45px" alt="">
+                        </td>
+                        <td>
+                            <p id="foooter-tittle">Lorem ipsum</p>
+                            <p>Lorem ipsum dolor sit amet <a href="#">consectetur</a> and <a href="#">Faucibus</a> Id
+                                neque ante sit consectetur nunc congue. Gravida nisi
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!------------------ app-poster ------------------->
+        <tr>
+            <td class="app-poster">
+                <table>
+                    <tr class="googleplay-card">
+                        <td>
+                            <p>Lorem ipsum dolor sit amet
+                                consectetur. Mauris eget.</p>
+                            <img src="./Asset-1/googleplay.png" alt="">
+                        </td>
+                        <td id="app-pos-mobi">
+                            <img  src="./Asset-1/mobile-mockup.png" alt="">
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+        <!------------------ social meadia ------------------->
+
+        <tr class="social-meadia">
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./Asset-1/facebook.png" alt="">
+                        </td>
+                        <td>
+                            <p>Lorem ipsum dolor sit amet consectetur. Magna in quis accumsan.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!------------------ contact ------------------->
+        <tr class="contact">
+            <td>
+                <table class="contact-container">
+                    <tr>
+                        <td>
+                            <p>*Lorem ipsum dolor sit amet consectetur.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><sub>2</sub> augue. Duis massa ac et nibh. Non ultricies malesuada at elit vel enim vitae. Elementum etiam natoque
+                                odio lorem dictum purus quis nisl. Turpis nisl quis sit diam. Augue molestie semper netus morbi. Velit
+                                phasellus <u>curabitur</u>  justo nunc viverra. Facilisis quis volutpat sed consectetur. <u>Malesuada</u>  eu vel tristique
+                                et aenean pellentesque consectetur quis. Mi sem Feugiat porttitor eu hac urna laoreet sitLobortis. 
+                                </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
